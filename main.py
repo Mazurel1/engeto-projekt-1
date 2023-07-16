@@ -121,6 +121,7 @@ for cislo in cisla_v_textu:
 #           za každý znak ve slovu, přičti
 #           +1 do proměnné pocet_znaku a proměnnou
 #           delka_znaku přidej do listu delky_slov.
+
 delky_slov = []
 
 for delka_slova in vsechna_slova:
@@ -140,12 +141,14 @@ for delka_slova in vsechna_slova:
 #   v pocet_stejne_delky použít délku slova
 #   jako hodnotu pro vytvoření položky ve slovníku
 #   kde spočítej její výskyt a použíj jako její hodnotu.
+
 pocet_stejne_delky = {}
 
 for delka in delky_slov:
      pocet_stejne_delky[delka] = delky_slov.count(delka)
 
 # Převedení slovníku pocet_stejne_delky na list.
+
 delky_slov_list = list(pocet_stejne_delky.items())
 
 print(f"V textu je {pocet_slov} slov.")
@@ -155,6 +158,7 @@ print(f"V textu je {psane_m_pismeny} slov psaných malými písmeny.")
 print(f"V textu je {string_je_cislo} čísísel.")
 print(f"Součet všech čísel v textu je {soucet_cisel}.")
 print(oddelovac)
+
 # Vytvoření grafu počtu opakování daného čísla.
 # Pro delka a vyskyt v delky_slov_list:
 #   proměnná stupníce je "*" znásoben výskyt.
